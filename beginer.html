@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>docs</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-dark: #2d3436;
+            --accent-teal: #87a7a7;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-teal);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .hero-text p {
+            color: var(--accent-teal);
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="origami.html">
+                Origami <span style="color: var(--accent-teal);">Oasis</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3 active" href="origami.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="galllery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    
+                    <li class="nav-item ms-lg-4">
+                        <div class="form-check form-switch d-flex align-items-center">
+                            <label class="form-check-label me-5 small" for="darkModeSwitch">Dark theme</label>
+                            <input class="form-check-input custom-toggler" type="checkbox" id="darkModeSwitch">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="hero-card">
+        <div class="hero-text">
+            <h1>Beginner</h1>
+            <p>Level 1</p>
+        </div>
+       <img src="k.jpg" alt="">
+    </div>
+
+    <div class="grid">
+        <div class="project-card">
+            <h3>Simple Heart</h3>
+            <p>5 Steps • 2 Mins</p>
+        </div>
+        <div class="project-card">
+            <h3>Paper Crane</h3>
+            <p>12 Steps • 5 Mins</p>
+        </div>
+        <div class="project-card">
+            <h3>Basic Plane</h3>
+            <p>4 Steps • 1 Min</p>
+        </div>
+    </div>
+</div> <footer class="tayyab-main-footer">
+  <div class="tayyab-footer-wrapper">
+    
+    <div class="tayyab-footer-section tayyab-contact-info">
+      <a href="tayyab-mailto:info@origamioasis.com">info@origamioasis.com</a>
+      <p>+1-800-PAPER</p>
+      <p>123 Paper Fold Ave, Crane City</p>
+      <p>&copy; 2024 Origami Oasis. All rights reserved.</p>
+    </div>
+
+    <div class="tayyab-footer-section tayyab-social-links">
+      <div class="social-item">
+        <span>@origamioasis_official</span>
+      </div>
+      <div class="tayyab-social-item">
+        <span>Origami Oasis</span>
+      </div>
+      <div class="tayyab-social-item">
+        <span>@origamioasis</span>
+      </div>
+      <a href="#" class="tayyab-feedback-link">Feedback/Contact</a>
+    </div>
+
+  </div>
+</footer>
