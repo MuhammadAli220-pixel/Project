@@ -42,25 +42,34 @@ background-color: rgb(204, 198, 198);
 .item img{
     height: 324px;
     width: 350px;
-    /* Navbar ko poori width par force karne ke liye */
-.navbar-custom {
-    width: 100% !important;
-    max-width: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    position: relative !important;
+    /* Responsive Grid setup */
+.gallery {
+    display: grid;
+    /* Default for Desktop: 3 columns */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Body ki padding/margin khatam karna zaroori hai */
-body {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden; /* Side scrolling se bachne ke liye */
+/* Tablet screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
 }
+
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for phones */
+    }
     
+    .item img {
+        width: 100%; /* Image poori width cover kare */
+        height: auto; /* Aspect ratio kharab na ho */
+    }
 }
+
 </style>
 </head>
 
