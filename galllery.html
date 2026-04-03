@@ -42,31 +42,28 @@ background-color: rgb(204, 198, 198);
 .item img{
     height: 324px;
     width: 350px;
+}
     /* Responsive Grid setup */
 .gallery {
-    display: grid;
-    /* Default for Desktop: 3 columns */
+    display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
 }
-
-/* Tablet screens (max-width: 992px) */
+
 @media (max-width: 992px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
-}
-
-/* Mobile screens (max-width: 600px) */
+}
 @media (max-width: 600px) {
     .gallery {
-        grid-template-columns: repeat(1, 1fr); /* 1 column for phones */
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .item img {
-        width: 100%; /* Image poori width cover kare */
-        height: auto; /* Aspect ratio kharab na ho */
+        width: 100%; 
+        height: auto;
     }
 }
 
